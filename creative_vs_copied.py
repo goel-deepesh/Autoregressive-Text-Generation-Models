@@ -150,3 +150,14 @@ class LcsFinder:
             i = i + sequence_len
 
         return list_of_seqs_to_markdown(list_of_sequences)
+
+#@markdown An example of how to build an `LcsFinder`. The `str.split()` function turns the string into a list of string.
+test_word_sequence = "wow this is a sentence that I wrote like wow this is a real thing".split(" ")
+test_small_sequence = "heck this is a sentence that is sgetti".split(" ")
+
+test_LCS_finder = LcsFinder(test_word_sequence)
+test_lcs_length = test_LCS_finder.lcs_length(test_small_sequence)
+display(Markdown(f'The length of the LCS between `test_word_sequence` and `test_small_sequence` is {test_lcs_length}.'))
+
+#@markdown An example of coloring the `small_sequence` by all the LCS's found in the word_sequence.
+test_LCS_finder.greedy_lcs_markdown(test_small_sequence)
