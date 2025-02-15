@@ -112,6 +112,6 @@ start_test = random.choice(list(freq_dict_test.keys()))
 # Generate a paragraph, and print it.
 gen_paragraph = predict_paragraph(start_test, k_test, freq_dict_test)
 
-# Join the generated words into a readable paragraph.
+# Join the generated words into a paragraph.
 print("Generated Paragraph:")
 print(" ".join(gen_paragraph))
