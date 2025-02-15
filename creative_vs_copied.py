@@ -159,5 +159,5 @@ test_LCS_finder = LcsFinder(test_word_sequence)
 test_lcs_length = test_LCS_finder.lcs_length(test_small_sequence)
 display(Markdown(f'The length of the LCS between `test_word_sequence` and `test_small_sequence` is {test_lcs_length}.'))
 
-#@markdown An example of coloring the `small_sequence` by all the LCS's found in the word_sequence.
+#An example of coloring the `small_sequence` by all the LCS's found in the word_sequence.
 test_LCS_finder.greedy_lcs_markdown(test_small_sequence)
